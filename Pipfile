@@ -12,6 +12,7 @@ opencv-python = "*"
 pil = "*"
 pillow = "*"
 matplotlib = "*"
+ptpython = "*"
 
 [requires]
 python_version = "3.7"

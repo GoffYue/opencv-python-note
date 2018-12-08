@@ -5,9 +5,8 @@
 # @Description:
 
 # @Last Modified by:   Goff_Wang
-# @Last Modified time: 2018-12-08 13:12:15
+# @Last Modified time: 2018-12-08 16:48:19
 import cv2 as cv
-import numpy as np
 
 
 # Mouse events Callback Function
