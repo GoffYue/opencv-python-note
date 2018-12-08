@@ -1,6 +1,5 @@
 
 # OpenCV-Python-Note
-[TOC]
 
 ## [01 Introduction of OpenCV](https://github.com/GoffYue/opencv-python-note/tree/master/01%20Introduction%20to%20OpenCV)
 
