@@ -5,11 +5,18 @@
 # @Description:
 
 # @Last Modified by:   Goff_Wang
-# @Last Modified time: 2018-12-08 11:01:34
+# @Last Modified time: 2018-12-08 13:12:15
 import cv2 as cv
 import numpy as np
 
 
+# Mouse events Callback Function
+def callback(event, x, y, flags, param):
+    if event == cv.EVENT_LBUTTONDOWN:
+        print(x, y)
+
+
+# Loading image
 img = cv.imread('01-27-30.png')
 
 # Accessing and Modifying pixel value
@@ -31,6 +38,7 @@ print('size: ', img.size)
 print('data type: ', img.dtype)
 print('dir : ', dir(img))
 
+# Modifying Image Properties
 size = img.shape
 img = cv.resize(img, (size[1] // 4, size[0] // 4), cv.INTER_LINEAR)
 
@@ -38,10 +46,15 @@ img = cv.resize(img, (size[1] // 4, size[0] // 4), cv.INTER_LINEAR)
 crop_img = img[212:251, 699:740]
 img[324:363, 597:638] = crop_img
 
+# Splitting and Merging Image Channels
+b, g, r = cv.split(img)
+img = cv.merge((b, g, r))
 
-def callback(event, x, y, flags, param):
-    if event == cv.EVENT_LBUTTONDOWN:
-        print(x, y)
+# or
+b = img[:, :, 0], g = img[:, :, 1], r = img[:, :, 2]
+
+# seting channel value
+img[:, :, 2] = 0
 
 
 cv.namedWindow('image')
