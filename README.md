@@ -18,6 +18,6 @@
 - [x] [opencv_image_core.py](https://github.com/GoffYue/opencv-python-note/blob/master/03%20Core%20Operations/opencv_image_core.py)
 - [x] [opencv_arithmetic_operations.py](https://github.com/GoffYue/opencv-python-note/blob/master/03%20Core%20Operations/opencv_arithmetic_operations.py)
 - [x] [opencv_image_border.py](https://github.com/GoffYue/opencv-python-note/blob/master/03%20Core%20Operations/opencv_image_border.py)
-- [ ] [Performance Measurement and Improvement Techniques](https://github.com/GoffYue/opencv-python-note)
+- [x] [Performance Measurement and Improvement Techniques](https://github.com/GoffYue/opencv-python-note/blob/master/03%20Core%20Operations/opencv_performance_measurement.py)
 
 ## [Other chapters  In progress](https://github.com/GoffYue/opencv-python-note)
